@@ -37,7 +37,7 @@ export class CommunitiesComponent {
     }
     // this.getCommunities();
     const data = {
-      title: 'Solar Consultants Health Practitioner',
+      title: 'SolarConsultants.tube',
       url: `${window.location.href}`,
       description: '',
     };

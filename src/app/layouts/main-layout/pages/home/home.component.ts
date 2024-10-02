@@ -459,7 +459,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
       data.link2 = this.sharedService?.advertizementLink[1]?.url;
     }
     modalRef.componentInstance.title = `Edit ${
-      data.pageType === 'community' ? 'Practitioner' : 'Page'
+      data.pageType === 'community' ? 'Consultant' : 'Page'
     } Details`;
     modalRef.componentInstance.cancelButtonLabel = 'Cancel';
     modalRef.componentInstance.confirmButtonLabel = 'Save';

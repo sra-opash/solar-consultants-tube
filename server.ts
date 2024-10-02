@@ -91,9 +91,9 @@ export function app(): express.Express {
           description:
             'Speak Face to Face with Solar Consultants around the world.',
           image:
-            'https://www.healing.tube/assets/images/Ht-Profile-pic-default.png',
-          site: 'https://www.healing.tube/',
-          url: 'https://www.healing.tube' + params,
+            'https://www.solarconsultant.tube/assets/images/Ht-Profile-pic-default.png',
+          site: 'https://www.solarconsultant.tube/',
+          url: 'https://www.solarconsultant.tube' + params,
           keywords: 'solar-consultants',
         };
         if (
@@ -156,13 +156,13 @@ export function app(): express.Express {
           const pdhtml = document.createElement('div');
           pdhtml.innerHTML = post?.postdescription || post?.metadescription;
           const talent = {
-            name: post?.title || post?.albumname || 'Healing.Tube Post',
+            name: post?.title || post?.albumname || 'SolarConsultant.Tube Post',
             description: pdhtml?.textContent || 'Post content',
             image:
               post?.thumbfilename ||
               post?.metaimage ||
               post?.imageUrl ||
-              'https://www.healing.tube/assets/images/Ht-Profile-pic-default.png',
+              'https://www.solarconsultant.tube/assets/images/Ht-Profile-pic-default.png',
           };
           seo.title = talent.name;
           seo.description = strip_html_tags(talent.description);
@@ -177,7 +177,7 @@ export function app(): express.Express {
 
           console.log('group===>', group);
           const talent = {
-            name: `HealingTube Research ${group?.PageTitle}`,
+            name: `SolarConsultant Research ${group?.PageTitle}`,
             description: group?.PageDescription,
             image: group?.CoverPicName || group?.ProfilePicName,
           };

@@ -29,7 +29,7 @@ import { AlertModalComponent } from 'src/app/@shared/modals/alert-modal/alert-mo
   styleUrls: ['./add-community-modal.component.scss'],
 })
 export class AddCommunityModalComponent implements OnInit, AfterViewInit {
-  @Input() title: string | undefined = 'Apply to be Health Practitioner';
+  @Input() title: string | undefined = 'Apply to be Consultant';
   @Input() cancelButtonLabel: string | undefined = 'Cancel';
   @Input() confirmButtonLabel: string | undefined = 'Create';
   @Input() closeIcon: boolean | undefined;
@@ -257,14 +257,14 @@ export class AddCommunityModalComponent implements OnInit, AfterViewInit {
         if (!res.error) {
           this.submitted = true;
           this.toastService.success(
-            'Your Health Practitioner edit successfully!'
+            'Your Consultant details edit successfully!'
           );
           this.activeModal.close('success');
         }
       },
       error: (err) => {
         this.toastService.danger(
-          'Please change Health Practitioner. this Health Practitioner name already in use.'
+          'Please change Consultant. this Consultant name already in use.'
         );
         this.spinner.hide();
       },
