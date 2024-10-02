@@ -91,7 +91,7 @@ export function app(): express.Express {
           description:
             'Speak Face to Face with Solar Consultants around the world.',
           image:
-            'https://www.solarconsulting.tube/assets/images/Ht-Profile-pic-default.png',
+            'https://www.solarconsulting.tube/assets/images/profile-cover.png',
           site: 'https://www.solarconsulting.tube/',
           url: 'https://www.solarconsulting.tube' + params,
           keywords: 'solar-consultants',
@@ -162,7 +162,7 @@ export function app(): express.Express {
               post?.thumbfilename ||
               post?.metaimage ||
               post?.imageUrl ||
-              'https://www.solarconsulting.tube/assets/images/Ht-Profile-pic-default.png',
+              'https://www.solarconsulting.tube/assets/images/profile-cover.png',
           };
           seo.title = talent.name;
           seo.description = strip_html_tags(talent.description);
