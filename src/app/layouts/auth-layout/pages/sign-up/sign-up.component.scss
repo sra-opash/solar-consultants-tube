@@ -11,15 +11,21 @@
       position: relative;
       height: 490px;
       .about-freedom {
+        display: flex;
+        flex-direction: column;
         position: absolute;
         top: 50%;
         left: 0;
         width: 100%;
         transform: translate(0, -50%);
-        padding: 50px;
-        h3 {
-          font-weight: 600;
-        }
+        padding: 20px;
+        ul {
+          padding-left: 0;
+          li {
+            font-size: 23px;
+            margin-bottom: 5px;
+          }
+        } 
       }
     }
   }
